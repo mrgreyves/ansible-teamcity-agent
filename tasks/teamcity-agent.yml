@@ -55,7 +55,7 @@
 - name: "Add TeamCity Agent configuration"
   template:
     src: "buildAgent.properties.j2"
-    dest: "{{ teamcity_agent_install_dir }}/conf/buildAgent.dist.properties"
+    dest: "{{ teamcity_agent_install_dir }}/conf/buildAgent.properties"
     owner: "{{ teamcity_agent_user }}"
     group: "{{ teamcity_agent_group }}"
     mode: 0644
